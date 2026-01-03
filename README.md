@@ -1,182 +1,63 @@
-TECHTALES
+# TECHTALES
+## An AI-Driven Story-Based Learning Platform for Improving Programming Productivity
 
-An AI-Driven Story-Based Learning Platform for Improving Programming Productivity
+---
 
-1. Problem Statement
+### 1. Problem Statement
+Programming concepts are often taught using abstract and syntax-heavy approaches, making learning difficult for many. This results in:
+* **Low Conceptual Clarity:** Learners struggle to form mental models.
+* **Repetitive Doubts:** Mentors spend excessive time re-explaining basic principles.
+* **Reduced Productivity:** Learning progress is slowed by a lack of intuitive materials.
 
-Programming concepts are often taught using abstract explanations and syntax-heavy approaches.
-This makes it difficult for many learners to understand the actual logic behind the code.
+---
 
-As a result:
+### 2. Proposed Solution
+**TECHTALES** is an AI-powered platform that improves learning productivity by transforming abstract coding concepts into structured real-world stories. By delivering these through narrated videos and mapping them to programming logic, the platform ensures students understand the **"why"** before the **"how."**
 
-Learners memorize code instead of understanding it
+---
 
-The same doubts are repeated multiple times
+### 3. Innovation Highlights
+* **Dynamic Concept Input:** Users can enter any concept manually—no fixed syllabus.
+* **Story-to-Code Mapping:** Explicitly connects story characters to variables and actions to functions.
+* **AI-Generated Roadmaps:** Dynamically suggests the next topic based on user history and language.
+* **Story-Based Feedback:** Errors are explained using the same story characters to ensure the student understands their logical mistake.
 
-Learning becomes slow and confusing
+---
 
-Teaching productivity is reduced
+### 4. System Architecture
+TECHTALES is implemented as a modular AI-driven system:
+* **Story Generation Engine:** LLM-based narrative creator.
+* **Story Explainer Video Generator:** Converts text to visual/auditory learning.
+* **Roadmap Generator:** Uses RAG to plan personalized learning paths.
+* **Evaluation Engine:** Logic-based code validator that prioritizes reasoning over syntax.
 
-There is a need for an intelligent learning system that explains programming concepts intuitively, validates real understanding, and improves learning productivity.
+---
 
-2. Proposed Solution
+### 5. Technology Stack
+* **Language:** Python
+* **Backend:** Django
+* **AI Models:** Large Language Models (API-based)
+* **RAG Framework:** Vector embeddings with ChromaDB
+* **Evaluation:** Rule-based validation with LLM-assisted reasoning
 
-TECHTALES is an AI-powered learning platform that teaches programming concepts using real-life stories.
+---
 
-Instead of starting with syntax, TECHTALES starts with intuition.
-Each programming concept is converted into a real-world story, explained through a short explainer video, clearly mapped to programming logic, and then evaluated using a new concept-based coding task.
+### 6. Final User Flow
+1. **Input:** User enters a concept (e.g., "Loops") and difficulty.
+2. **Visualize:** AI generates a story and a corresponding video.
+3. **Map:** The system shows exactly how story elements represent code.
+4. **Practice:** User writes code for a *new* problem based on the same concept.
+5. **Feedback:** AI provides feedback using the story's theme.
+6. **Next Step:** User checks the AI-generated Roadmap for the next topic.
 
-The platform allows users to:
+---
 
-Enter any programming concept
+### 7. Productivity Impact
+* **Learners:** Faster understanding and higher retention through narrative learning.
+* **Educators:** Reduces repetitive explanations, allowing mentors to focus on complex projects.
+* **Scalability:** Provides a consistent, high-quality learning experience for thousands of students simultaneously.
 
-Select programming language
+---
 
-Choose difficulty level
-
-and receive AI-generated explanations, feedback, and personalized learning roadmaps.
-
-3. Innovation Highlights
-
-Free-text input for programming concepts (no predefined syllabus)
-
-AI-generated real-life stories for coding concepts
-
-Automated story-based explainer video generation
-
-Clear mapping of story elements to programming constructs
-
-Concept-based code evaluation using new problem statements
-
-Story-based textual feedback for incorrect solutions
-
-AI-generated personalized learning roadmaps
-
-4. System Architecture Overview
-
-TECHTALES is designed as a modular AI-driven system with the following components:
-
-Concept Input and Context Builder
-
-Story Generation Engine (LLM)
-
-Story Explainer Video Generator
-
-Story-to-Code Mapping Module
-
-Personalized Learning Roadmap Generator
-
-Code Evaluation Engine
-
-Story-Based Feedback Generator
-
-These components work together through an agent-based workflow to ensure consistency, adaptability, and scalability.
-
-5. AI Pipelines
-5.1 Concept to Story Generation
-
-Input: User-entered concept, programming language, difficulty level
-
-Output: Structured real-life story explaining the concept
-
-Uses prompt engineering and controlled AI generation
-
-5.2 Story to Video Generation
-
-Converts the generated story into a narrated explainer video
-
-Focuses on logic understanding, not syntax
-
-5.3 Story to Code Mapping
-
-Maps story elements to programming constructs:
-
-Characters → Variables
-
-Actions → Functions
-
-Repetition → Loops
-
-Decisions → Conditional statements
-
-Includes pseudocode and reference explanation.
-
-5.4 Learning Roadmap Generation
-
-Triggered when the user selects “What should I learn next?”
-
-Uses language, difficulty level, and completed concepts
-
-Generates a personalized learning roadmap
-
-5.5 Code Evaluation and Feedback
-
-Users solve a new problem testing the same concept
-
-Evaluation checks conceptual correctness
-
-Feedback is explained first using the story, then mapped to code
-
-6. Final User Flow
-
-User enters a programming concept, language, and difficulty level
-
-AI generates a real-life story
-
-Story explainer video is presented
-
-Story-to-code mapping is displayed
-
-User writes code for a new concept-based problem
-
-AI evaluates the code
-
-Story-based feedback is provided
-
-User proceeds to the next concept, replays the story, or views a roadmap
-
-7. Productivity Impact
-For Learners
-
-Faster conceptual understanding
-
-Less confusion and stress
-
-Better confidence and retention
-
-For Educators and Institutions
-
-Fewer repeated explanations
-
-Scalable teaching approach
-
-Improved teaching productivity
-
-8. Guardrails and Evaluation
-
-AI responses are grounded using retrieved contextual knowledge
-
-Low-confidence responses are handled explicitly
-
-Evaluation focuses on logic and understanding, not syntax alone
-
-Known limitations and failure cases are documented
-
-9. Technology Stack
-Backend & Core Logic
-
-Programming Language: Python
-
-Backend Framework: Django
-
-AI Models: Large Language Models (API-based)
-
-RAG Framework: Vector embeddings with ChromaDB
-
-Evaluation Engine: Rule-based validation with LLM-assisted reasoning
-
-
-12. Conclusion
-
-TECHTALES demonstrates how AI and storytelling can be combined to improve programming education productivity.
-By teaching understanding before syntax, the platform reduces confusion, saves instructional effort, and makes learning more effective and scalable.
+### 8. Conclusion
+**TECHTALES** demonstrates how Generative AI, RAG, and agentic workflows can transform programming education. By making abstract concepts intuitive and scalable, it significantly enhances the productivity of both students and educational institutions.
