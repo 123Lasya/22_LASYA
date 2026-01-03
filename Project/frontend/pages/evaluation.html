@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation - TechTales</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .result-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .success {
+            color: var(--success);
+        }
+
+        .error {
+            color: var(--error);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="../index.html" class="logo">TECHTALES</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <div id="loading-state">
+                <h3>Evaluating your code...</h3>
+            </div>
+
+            <div id="result-content" style="display: none;">
+                <div id="result-icon-container" class="result-icon"></div>
+                <h2 id="result-message"></h2>
+
+                <p id="result-explanation"
+                    style="margin: 2rem 0; padding: 1rem; background: #f8f9fa; border-radius: 6px;"></p>
+
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                    <a href="story.html" class="btn btn-secondary">Replay Story</a>
+                    <a href="concept.html" class="btn">Next Concept</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechTales. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

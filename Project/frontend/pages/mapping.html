@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story to Code - TechTales</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .mapping-section {
+            margin-bottom: 2rem;
+        }
+
+        .mapping-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .mapping-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+        }
+
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="../index.html" class="logo">TECHTALES</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 style="text-align: center;">From Story to Code</h1>
+
+        <div class="card" style="max-width: 900px; margin: 0 auto;">
+            <div class="mapping-section">
+                <h3>Story Recap</h3>
+                <p>In the story, the hero had to organize the library books by genre (Variables) and then sort them
+                    alphabetically using a specific set of rules (Loops and Conditionals).</p>
+            </div>
+
+            <div class="mapping-section">
+                <h3>Mapping Concepts</h3>
+                <div class="mapping-grid">
+                    <div class="mapping-item">
+                        <strong>Story Element</strong>
+                        <p>The Library Shelves</p>
+                    </div>
+                    <div class="mapping-item">
+                        <strong>Programming Concept</strong>
+                        <p>Arrays / Lists</p>
+                    </div>
+
+                    <div class="mapping-item">
+                        <strong>Story Element</strong>
+                        <p>Checking each book one by one</p>
+                    </div>
+                    <div class="mapping-item">
+                        <strong>Programming Concept</strong>
+                        <p>For Loop / Iteration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mapping-section">
+                <h3>Pseudocode & Explanation</h3>
+                <div class="code-block">
+                    FOR each book IN library_shelves:
+                    IF book.genre IS_NOT "correct":
+                    MOVE book TO correct_shelf
+                </div>
+                <p style="margin-top: 1rem;">This structure ensures every item is processed and placed where it belongs,
+                    just like iterating through a list to filter data.</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="coding.html" class="btn btn-large">Proceed to Coding Task</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechTales. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
