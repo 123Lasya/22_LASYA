@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Task - TechTales</title>
+    <link rel="stylesheet" href="{% static 'learning_app/css/style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #code-editor {
+        width: 100%;
+        height: 300px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        font-family: monospace;
+        padding: 1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        resize: vertical;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-content">
+        <a href="../index.html" class="logo">TECHTALES</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card" style="max-width: 900px; margin: 0 auto">
+        <div style="margin-bottom: 2rem">
+          <h2>Solve the Puzzle</h2>
+          <div
+            style="
+              background: #f1f3f5;
+              padding: 1rem;
+              border-left: 4px solid var(--accent-color);
+              border-radius: 4px;
+            "
+          >
+            <p>
+              <strong>Task:</strong> based on the story, write a function that
+              takes a list of numbers and returns only the even ones.
+            </p>
+            <p><em>Hint: Think about how the hero filtered the books!</em></p>
+          </div>
+        </div>
+
+        <form id="code-form">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="code-editor">Your Code:</label>
+            <textarea id="code-editor" spellcheck="false">
+def solve_puzzle(items):
+    # Your code here
+    pass</textarea
+            >
+          </div>
+
+          <div style="text-align: right">
+            <button type="submit" class="btn btn-large">Submit Code</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 TechTales. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'learning_app/js/api.js' %}"></script>
+    <script src="{% static 'learning_app/js/main.js' %}"></script>
+  </body>
+</html>
