@@ -61,3 +61,22 @@ TECHTALES is implemented as a modular AI-driven system:
 
 ### 8. Conclusion
 **TECHTALES** demonstrates how Generative AI, RAG, and agentic workflows can transform programming education. By making abstract concepts intuitive and scalable, it significantly enhances the productivity of both students and educational institutions.
+
+---
+###Commands
+# Clone the repository
+git clone https://github.com/your-username/TechTales.git
+cd TechTales
+
+# Set up virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: .\venv\Scripts\activate
+
+# Install dependencies
+pip install django google-generativeai moviepy gTTS pexels-api-py requests python-dotenv
+# Prepare the media folder for generated videos
+mkdir media
+
+# Run migrations and start
+python manage.py migrate
+python manage.py runserver
