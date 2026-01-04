@@ -37,7 +37,7 @@ TECHTALES is implemented as a modular AI-driven system:
 * **Language:** Python
 * **Backend:** Django
 * **AI Models:** Large Language Models (API-based)
-* **RAG Framework:** Vector embeddings with ChromaDB
+* **Google Note Book:** https://colab.research.google.com/drive/1Zc4tmN5j1RmR1zaFnQDzgrkPCoTbiWXi?usp=sharing
 * **Evaluation:** Rule-based validation with LLM-assisted reasoning
 
 ---
