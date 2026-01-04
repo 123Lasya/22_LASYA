@@ -125,3 +125,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+import os
+
+# Base directory for the project
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# URL that refers to media files
+MEDIA_URL = '/media/'
+
+# Absolute filesystem path to the directory that will hold generated files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -22,15 +22,19 @@ class MockAPI { // Kept name same as main.js depends on it
     }
  
     static async submitCode(code) {
-        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
-        const response = await fetch('/api/evaluate-code/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': csrftoken
-            },
-            body: JSON.stringify({ code })
-        });
-        return await response.json();
-    }
+    // Look for the CSRF token in the HTML form
+    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+    
+    const response = await fetch('/api/evaluate-code/', { // Make sure this matches urls.py
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrftoken
+        },
+        body: JSON.stringify({ code: code })
+    });
+
+    if (!response.ok) throw new Error("AI Evaluation failed");
+    return await response.json();
+}
 }
